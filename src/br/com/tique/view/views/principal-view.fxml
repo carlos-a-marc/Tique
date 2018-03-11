@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/style.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="barraSuperior" prefHeight="25.0" prefWidth="998.0" style="-fx-background-color: #f3f5f6;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="956.0" prefHeight="30.0" prefWidth="120.0" spacing="25.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="lblMin" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#botoesBarraSuperior" text="min">
+                           <graphic>
+                              <ImageView fitHeight="14.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/mini.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lblMax" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="17.0" onMouseClicked="#botoesBarraSuperior" text="max">
+                           <graphic>
+                              <ImageView fitHeight="14.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/expand.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lblClose" contentDisplay="GRAPHIC_ONLY" layoutX="28.0" layoutY="17.0" onMouseClicked="#botoesBarraSuperior" text="close">
+                           <graphic>
+                              <ImageView fitHeight="14.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/close.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/java.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="26.0" layoutY="12.0" text="Tique" textFill="#e33730" />
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="998.0">
+               <children>
+                  <AnchorPane prefWidth="600.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="34.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/java.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="34.0" layoutY="31.0" text="Tique" textFill="#e33730">
+                           <font>
+                              <Font name="Amerika Sans" size="17.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="292.0" layoutY="3.0" prefHeight="65.0" prefWidth="310.0" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="55.0" styleClass="menu-superior" text="Início" textFill="#807b7b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/principal.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="81.0" styleClass="menu-superior" text="Despesas" textFill="#807b7b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/gastos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="83.0" styleClass="menu-superior" text="Estatísticas" textFill="#807b7b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/statistic.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="58.0" styleClass="menu-superior" text="Suporte" textFill="#807b7b">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/contato.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutY="95.0" prefHeight="310.0" prefWidth="1000.0" styleClass="fundo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="200.0" layoutY="55.0" spacing="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+               <children>
+                  <Region minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="362.0" />
+                  <Pane minWidth="-Infinity" prefHeight="129.0" prefWidth="227.0" style="-fx-background-color: rgba(255,255,255,.3);">
+                     <children>
+                        <Label layoutX="26.0" layoutY="14.0" text="Bem vindo ao Tique" textFill="#018fd7">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="57.0" text="Para saber mais sobre nós clique abaixo:" textFill="#018fd7">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="53.0" layoutY="79.0" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #018fd7; -fx-text-fill: #ffffff;" text="Clique aqui">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="330.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <children>
+            <HBox alignment="CENTER" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="150.0" styleClass="menu-medio1">
+                     <children>
+                        <Label layoutX="58.0" layoutY="81.0" text="Nova" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="47.0" fitWidth="35.0" layoutX="58.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/add.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="47.0" fitWidth="25.0" layoutX="60.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/go.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="15.0" layoutY="100.0" text="Oe ererer tetet ertt rerer." textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="150.0" styleClass="menu-medio2">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="35.0" layoutX="58.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/despesa.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="43.0" layoutY="80.0" text="Despesas" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="47.0" fitWidth="25.0" layoutX="61.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/go.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="16.0" layoutY="100.0" text="Oe ererer tetet ertt rerer." textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="150.0" styleClass="menu-medio1">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="35.0" layoutX="58.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/relatorio.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="46.0" layoutY="80.0" text="Relatório" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="47.0" fitWidth="25.0" layoutX="61.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/go.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="16.0" layoutY="100.0" text="Oe ererer tetet ertt rerer." textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="210.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="150.0" styleClass="menu-medio2">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="35.0" layoutX="58.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/message.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="32.0" layoutY="79.0" text="Fale conosco" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="54.0" fitWidth="25.0" layoutX="60.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/go.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="15.0" layoutY="100.0" text="Oe ererer tetet ertt rerer." textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="175.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+               <children>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="2.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bag.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="70.0" layoutY="10.0" text="Supermercado" textFill="#018fd7">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="34.0" text="Lorem ipsum dolor sit amet, consectetur">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="46.0" text="Nullam vestibulum eget velit quis posuere">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="58.0" text="Shbhfehek ergekrgerf ergerg erger ergf">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="3.0" layoutY="85.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="2.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/gym.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="70.0" layoutY="10.0" text="Academia" textFill="#018fd7">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="34.0" text="Lorem ipsum dolor sit amet, consectetur">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="46.0" text="Nullam vestibulum eget velit quis posuere">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="58.0" text="Shbhfehek ergekrgerf ergerg erger ergf">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="2.0" layoutY="85.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="25.0" layoutY="286.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="273.0">
+               <children>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="2.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/energy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="70.0" layoutY="10.0" text="Energia" textFill="#018fd7">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="34.0" text="Lorem ipsum dolor sit amet, consectetur">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="46.0" text="Nullam vestibulum eget velit quis posuere">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="58.0" text="Shbhfehek ergekrgerf ergerg erger ergf">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="2.0" layoutY="84.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="2.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/others.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="70.0" layoutY="10.0" text="Outros" textFill="#018fd7">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="34.0" text="Lorem ipsum dolor sit amet, consectetur">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="46.0" text="Nullam vestibulum eget velit quis posuere">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="58.0" text="Shbhfehek ergekrgerf ergerg erger ergf">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="2.0" layoutY="84.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="-8.0" layoutY="30.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <MenuButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: #ffffff;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Configurações" />
+                  <MenuItem mnemonicParsing="false" text="Sair" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user-menor.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

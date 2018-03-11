@@ -1,0 +1,28 @@
+.fundo {
+	-fx-background-image: url('../img/fundo.jpg');
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.menu-medio1 {
+	-fx-background-color:  rgba(0,143,213,.8);
+}
+
+.menu-medio1:hover {
+	-fx-background-color: rgba(85,4,132,.8);
+}
+
+.menu-medio2 {
+	-fx-background-color:  rgba(0,143,213,.5);
+}
+
+.menu-medio2:hover {
+	-fx-background-color: rgba(85,4,132,.5);
+}
+
+.menu-superior:hover {
+	-fx-background-color: rgba(85,4,132,.7);
+	-fx-text-fill: #ffffff;
+	-fx-underline: true;
+}
