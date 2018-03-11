@@ -13,8 +13,8 @@ Tique é uma solução de software com o objetivo possibilitar que usuários pos
 
 ### Pré-requisitos
 
-Netbeans versão 8 ou superior(versão utilizada netbeans 8.2);
+Netbeans versão 8 ou superior(versão utilizada netbeans 8.2); <br />
 jdk versão 8 (versão utilizada 8u161);
 
-Criação de layouts:
+Criação de layouts: <br />
 Scene builder 8.3
